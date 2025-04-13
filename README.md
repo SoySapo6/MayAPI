@@ -56,8 +56,10 @@ async function generarImagen() {
 
 ## 🌈 Widgets divertidos
 
+[![MayAPI en acción](https://files.catbox.moe/z6o4as.png)](https://github.com/SoySapo6/MayAPI)
+
 ```markdown
-[![MayAPI en acción](https://img.shields.io/badge/MayAPI-Memeando-ff69b4)](https://github.com/SoyMaycol/MayAPI)
+[![MayAPI](https://files.catbox.moe/z6o4as.png)](https://github.com/SoySapo6/MayAPI)
 ```
 
 <div align="center">
