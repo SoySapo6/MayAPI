@@ -31,8 +31,8 @@
 | Opción       | Descripción                          | Meme Ejemplo                      |
 |--------------|--------------------------------------|-----------------------------------|
 | `sadcat`     | Gato triste con tu drama             | ![SadCat](https://api.popcat.xyz/sadcat?text=Cuando+el+codigo+no+funciona) |
-| `gun`        | "Pet me or die" (literal)            | ![Gun](https://api.popcat.xyz/gun?image=https://cdn.popcat.xyz/popcat.png&text=Hola+Mundo) |
-| `pikachu`    | Pikachu hypeando tu mensaje          | ![Pika](https://api.popcat.xyz/pikachu?text=API+GO+BRRR) |
+| `gun`        | "Pet me or die" (literal)            | ![Gun](https://api.popcat.xyz/gun?image=https://cdn.popcat.xyz/popcat.png&text=Hola+Chismoso) |
+| `pikachu`    | Pikachu hypeando tu mensaje          | ![Pika](https://api.popcat.xyz/pikachu?text=SoyMaycol+es+un+GOAT) |
 | `nokia`      | Nokia 3310 vibes (pura nostalgia)    | ![Nokia](https://api.popcat.xyz/nokia?image=https://i.imgur.com/9Ekg7Wf.jpg) |
 
 ---
@@ -63,7 +63,7 @@ async function generarImagen() {
 ```
 
 <div align="center">
-  <img src="https://api.popcat.xyz/opinion?image=https://i.kym-cdn.com/photos/images/newsfeed/001/394/351/33a.jpg&text=MayAPI+es+god" width="300">
+  <img src="https://api.popcat.xyz/opinion?image=https://i.kym-cdn.com/photos/images/newsfeed/001/394/351/33a.jpg&text=El+quien+se+mueve+es+gay" width="300">
 </div>
 
 ---
