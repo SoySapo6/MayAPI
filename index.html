@@ -1,0 +1,94 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MayAPI - Tu API Todo en Uno</title>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #1e1e2f, #0a0a0f);
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      animation: glow 2s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 5px #f0f, 0 0 10px #f0f; }
+      to { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
+    }
+    select, input, button {
+      margin: 0.5rem;
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+    #imagenGenerada {
+      margin-top: 2rem;
+      max-width: 90vw;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #333;
+      cursor: pointer;
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+  </style>
+</head>
+<body>
+  <h1>MayAPI - Todo en Uno</h1>
+  <p>Elige una acción mágica:</p>
+  <select id="accion">
+    <option value="sadcat">Gato Triste</option>
+    <option value="gun">Pet me or die</option>
+    <option value="pikachu">Pikachu</option>
+    <option value="opinion">Opinion</option>
+    <option value="screenshot">Screenshot</option>
+    <option value="nokia">Modo Nokia</option>
+        <option value="Paisaje">Paisaje</option>
+            <option value="Patos">Patos</option>
+    <option value="jokerlogo">Logo Joker (LoLHuman)</option>
+    <option value="cat">Gato</option>
+    <option value="box3d">Texto 3D Box (LoLHuman)</option>
+    <option value="cloudinary">Texto Personalizado (Cloudinary)</option>
+  </select><br><input id="inputTexto" type="text" placeholder="Texto o URL según la acción"><br> <button onclick="generarImagen()">Generar Imagen</button>
+
+<img id="imagenGenerada" onclick="descargarImagen(this.src)"><br>
+
+  <p>Haz clic en la imagen para descargarla.</p><div>Hecho por: SoyMaycol</div> <script>
+    async function generarImagen() {
+      const accion = document.getElementById('accion').value;
+      const texto = encodeURIComponent(document.getElementById('inputTexto').value);
+      let url = '';
+
+      if (accion === 'sadcat') url = `https://api.popcat.xyz/sadcat?text=${texto}`;
+      else if (accion === 'gun') url = `https://api.popcat.xyz/gun?image=https://cdn.popcat.xyz/popcat.png&text=${texto}`;
+      else if (accion === 'cat') url = `https://cataas.com/cat/says/${texto}?fontSize=50&fontColor=red`;
+      else if (accion === 'Paisaje') url = `https://picsum.photos/500/300`;
+      else if (accion === 'Patos') url = `https://random-d.uk/api/randomimg`;
+      else if (accion === 'pikachu') url = `https://api.popcat.xyz/pikachu?text=${texto}`;
+      else if (accion === 'opinion') url = `https://api.popcat.xyz/opinion?image=https://i.kym-cdn.com/photos/images/newsfeed/001/394/351/33a.jpg&text=${texto}`;
+      else if (accion === 'screenshot') url = `https://api.popcat.xyz/screenshot?url=${texto}`;
+      else if (accion === 'nokia') url = `https://api.popcat.xyz/nokia?image=${texto}`;
+      else if (accion === 'jokerlogo') url = `https://api.lolhuman.xyz/api/textprome/jokerlogo?apikey=6ce04afb2b5577b3aa412c88&text=${texto}`;
+      else if (accion === 'box3d') url = `https://api.lolhuman.xyz/api/textprome/box3d?apikey=6ce04afb2b5577b3aa412c88&text=${texto}`;
+      else if (accion === 'cloudinary') url = `https://res.cloudinary.com/dgsqkqjx6/image/upload/l_text:Arial_500_bold:${texto},co_rgb:FFFFFF/fl_preserve_transparency/v1743086353/7_sin_t%C3%ADtulo_20250327093853_sh1ypf.jpg`;
+
+      document.getElementById('imagenGenerada').src = url;
+    }
+
+    function descargarImagen(url) {
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'mayapi.png';
+      a.click();
+    }
+  </script></body>
+</html>
