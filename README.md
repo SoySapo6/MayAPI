@@ -67,7 +67,7 @@ async function generarImagen() {
 ---
 
 ## 📸 Demo en vivo
-[![Demo](https://api.popcat.xyz/screenshot?url=https://example.com)](https://tu-demo.com)
+[![Demo](https://api.popcat.xyz/screenshot?url=https://may-api.vercel.app/)](https://may-api.vercel.app/)
 
 ---
 
