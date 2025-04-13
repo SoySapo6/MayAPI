@@ -74,9 +74,11 @@ async function generarImagen() {
 ---
 
 ## 🎉 Créditos
-- Hecho con ♥ por [SoyMaycol](https://github.com/SoyMaycol)
+- Hecho con ♥ por [SoyMaycol](https://soymaycol.vercel.app/)
 - APIs usadas: PopCat.xyz, LolHuman, Cloudinary, Cataas
 - Café consumido: ∞ tazas
+
+- SOLO CON UN SOLO ARCHIVO?!
 
 <div align="center">
   <img src="https://random-d.uk/api/randomimg" width="200" alt="Pato random porque sí">
